@@ -1,0 +1,65 @@
+---
+title: "RaukR"
+author: "Völundur Hafstad"
+description: "This is a test description of the document"
+date: "20230612"
+format:
+  html:
+    title-block-banner: true
+    smooth-scroll: true
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    number-sections: true
+    number-depth: 4
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    code-overflow: wrap
+    df-print: kable
+    standalone: false
+    fig-align: left
+editor: visual
+execute: 
+  freeze: true
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+# Test
+
+## Level 2 heading
+
+*Italic text*
+
+**Bold text**
+
+```{r Named chunk, echo=FALSE, fig.height=4, fig.width=4, message=FALSE, warning=TRUE, paged.print=TRUE}
+
+```
+
+```{r, collapse=TRUE}
+#| label: "Iris table"
+#| 
+
+iris
+```
