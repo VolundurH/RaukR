@@ -585,10 +585,9 @@ benchmark <- microbenchmark(
 benchmark %>% autoplot()
 
 # Git ---------------------------------------------------------------------
-
-usethis::git_sitrep()
-usethis::create_github_token()
-gitcreds::gitcreds_set("https://github.com/settings/tokens/1005595874")
-usethis::use_git(message = "Initial commit")
-
-usethis::use_github()
+library(usethis)
+git_sitrep()
+create_github_token()
+gitcreds_set("https://github.com/settings/tokens/1005595874")
+use_git(message = "Initial commit")
+use_github()
